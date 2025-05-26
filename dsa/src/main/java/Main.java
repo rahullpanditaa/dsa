@@ -6,6 +6,10 @@ public class Main {
     public static void main(String[] args) {
         DynamicArray numbers = new DynamicArray(3);
 
+        numbers.insert(10);
+        numbers.insert(2);
+        numbers.insert(3);
+        numbers.insert(44444);
         numbers.print();
 
 
