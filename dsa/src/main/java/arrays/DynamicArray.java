@@ -33,6 +33,15 @@ public class DynamicArray {
         count--;
     }
 
+    public int indexOf(int number) {
+        for (int i = 0; i < count; i++) {
+            if (initialStaticArray[i] == number) {
+                return i;
+            }
+        }
+        return -1;
+    }
+
     public void print() {
         for (int i = 0; i < count; i++) {
             System.out.println(initialStaticArray[i]);
