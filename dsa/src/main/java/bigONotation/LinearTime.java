@@ -2,7 +2,7 @@ package bigONotation;
 
 public class LinearTime {
 
-    public void linearTimeOperation(int[] numbers, String[] words) {
+    public static void linearTimeOperation(int[] numbers, String[] words) {
         // O(n) -> the cost (number of operations) grows linearly in direct correlation
         // with increase in input size n
 
