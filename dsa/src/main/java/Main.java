@@ -10,6 +10,7 @@ public class Main {
         numbers.insert(2);
         numbers.insert(3);
         numbers.insert(44444);
+        numbers.removeAt(3);
         numbers.print();
 
 
