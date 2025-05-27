@@ -1,20 +1,22 @@
 import bigONotation.QuadraticTime;
 import arrays.DynamicArray;
 
+import java.util.LinkedList;
+
 public class Main {
 
     public static void main(String[] args) {
-        DynamicArray numbers = new DynamicArray(3);
+        LinkedList list = new LinkedList();
+        list.addLast(10);
+        list.addLast(20);
+        list.addLast(30);
+        list.addFirst(1);
+        list.addFirst(2);
+        list.addFirst(3);
+        System.out.println(list.contains(44));
+        System.out.println(list.indexOf(20));
+        System.out.println(list);
 
-        numbers.insert(10);
-        numbers.insert(2);
-        numbers.insert(3);
-        numbers.insert(44444);
-        numbers.removeAt(3);
-        numbers.insert(9);
-        System.out.println(numbers.indexOf(9));
-        System.out.println(numbers.indexOf(100000));
-        numbers.print();
 
 
     }
