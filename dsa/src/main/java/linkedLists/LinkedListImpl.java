@@ -124,6 +124,17 @@ public class LinkedListImpl {
 //        return count;
     }
 
+    // convert linked list to a static array
+    public int[] toArray() {
+        var array = new int[size()];
+        var currentNode = first;
+        for (int i = 0; i < size(); i++) {
+            array[i] = currentNode.getValue();
+            currentNode = currentNode.getNext();
+        }
+        return array;
+    }
+
    private boolean isEmpty() {
         return first == null;
    }

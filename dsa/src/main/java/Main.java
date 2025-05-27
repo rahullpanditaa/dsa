@@ -2,6 +2,7 @@ import bigONotation.QuadraticTime;
 import arrays.DynamicArray;
 import linkedLists.LinkedListImpl;
 
+import java.util.Arrays;
 import java.util.LinkedList;
 
 public class Main {
@@ -14,6 +15,7 @@ public class Main {
         list.addFirst(90);
         System.out.println(list.indexOf(40));
         System.out.println(list.size());
+        System.out.println(Arrays.toString(list.toArray()));
 
     }
 
