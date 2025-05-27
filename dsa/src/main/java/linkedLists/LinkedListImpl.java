@@ -148,6 +148,26 @@ public class LinkedListImpl {
         first = previousNode;
     }
 
+    // find the kth node of a linked list from the end in one pass
+    public Node getKthNodeFromTheEnd(int k) {
+        if (k <= 0) {
+            throw new IllegalArgumentException("k must be > 0");
+        }
+        var left = first;
+        var right = first;
+        for (int i = 0; i < k-1; i++) {
+            if (right == null || right.getNext() == null) {
+                throw new IllegalArgumentException("k is larger than the size of the linked list");
+            }
+            right = right.getNext();
+        }
+        while (right.getNext() != null) {
+            left = left.getNext();
+            right = right.getNext();
+        }
+        return left;
+    }
+
    private boolean isEmpty() {
         return first == null;
    }
