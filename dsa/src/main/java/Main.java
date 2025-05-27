@@ -8,13 +8,10 @@ public class Main {
 
     public static void main(String[] args) {
         var list = new LinkedListImpl();
-        list.addFirst(10);
-        list.addFirst(20);
-        list.addFirst(30);
-        list.addLast(44);
         list.addLast(40);
-        System.out.println(list.indexOf(40));
-        System.out.println(list.contains(30));
+        list.removeFirst();
+        System.out.println(list.contains(40));
+
     }
 
 }
