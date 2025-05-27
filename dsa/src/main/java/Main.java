@@ -11,7 +11,10 @@ public class Main {
         list.addFirst(10);
         list.addFirst(20);
         list.addFirst(30);
+        list.addLast(44);
+        list.addLast(40);
         System.out.println(list.indexOf(40));
+        System.out.println(list.contains(30));
     }
 
 }

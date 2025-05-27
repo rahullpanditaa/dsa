@@ -46,6 +46,22 @@ public class LinkedListImpl {
         return -1;
     }
 
+    // does the linked list contain the given value
+    public boolean contains(int value) {
+        if (isEmpty()) {
+            return false;
+        }
+        var currentNode = first;
+        while (currentNode != null) {
+            if (currentNode.getValue() == value) {
+                return true;
+            } else {
+                currentNode = currentNode.getNext();
+            }
+        }
+        return false;
+    }
+
    private boolean isEmpty() {
         return first == null;
    }
