@@ -99,6 +99,31 @@ public class LinkedListImpl {
 
     }
 
+    public int size() {
+        if (isEmpty()) {
+            return 0;
+        }
+        if (first == last) {
+            return 1;
+        } else {
+            int count = 1;
+            var currentNode = first;
+            while (currentNode != last) {
+                currentNode = currentNode.getNext();
+                count++;
+            }
+            return count;
+        }
+//        int count = 0;
+//        var currentNode = first;
+//
+//        while (currentNode != null) {
+//            count++;
+//            currentNode = currentNode.getNext();
+//        }
+//        return count;
+    }
+
    private boolean isEmpty() {
         return first == null;
    }

@@ -9,8 +9,11 @@ public class Main {
     public static void main(String[] args) {
         var list = new LinkedListImpl();
         list.addLast(40);
-        list.removeFirst();
-        System.out.println(list.contains(40));
+        list.addLast(50);
+        list.addLast(60);
+        list.addFirst(90);
+        System.out.println(list.indexOf(40));
+        System.out.println(list.size());
 
     }
 
