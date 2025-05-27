@@ -32,6 +32,24 @@ public class LinkedListImpl {
         }
     }
 
+    public int indexOf(int value) {
+        int index = 0;
+        var currentNode = first;
+        while (currentNode != null) {
+            if (currentNode.getValue() == value) {
+                return index;
+            } else {
+                currentNode = currentNode.getNext();
+                index++;
+            }
+        }
+        return -1;
+    }
+
+   private boolean isEmpty() {
+        return first == null;
+   }
+
 
 
     // addFirst
