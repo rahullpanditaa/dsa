@@ -9,12 +9,10 @@ public class Main {
 
     public static void main(String[] args) {
         var list = new LinkedListImpl();
-        list.addLast(40);
-        list.addLast(50);
-        list.addLast(60);
-        list.addFirst(90);
-        System.out.println(list.indexOf(40));
-        System.out.println(list.size());
+        list.addFirst(10);
+        list.addFirst(20);
+        list.addFirst(30);
+        list.reverse();
         System.out.println(Arrays.toString(list.toArray()));
 
     }

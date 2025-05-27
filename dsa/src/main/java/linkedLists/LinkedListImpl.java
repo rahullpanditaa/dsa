@@ -124,9 +124,7 @@ public class LinkedListImpl {
 //        return count;
     }
 
-    // convert linked list to a static array
     public int[] toArray() {
-        // call size once
         var size = size();
         var array = new int[size];
         var currentNode = first;
@@ -137,16 +135,20 @@ public class LinkedListImpl {
         return array;
     }
 
+    public void reverse() {
+        Node previousNode = null;
+        var currentNode = first;
+        last = first;
+        while (currentNode != null) {
+            var nextNode = currentNode.getNext();
+            currentNode.setNext(previousNode);
+            previousNode = currentNode;
+            currentNode = nextNode;
+        }
+        first = previousNode;
+    }
+
    private boolean isEmpty() {
         return first == null;
    }
-
-
-
-    // addFirst
-    // addLast
-    // deleteFirst
-    // deleteLast
-    // contains
-    // indexOf
 }
