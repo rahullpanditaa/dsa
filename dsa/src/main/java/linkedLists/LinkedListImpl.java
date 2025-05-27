@@ -17,9 +17,19 @@ public class LinkedListImpl {
             last.setNext(node);
             last = node;
         }
+    }
 
+    // addFirst
+    public void addFirst(int number) {
+        var node = new Node(number);
 
-
+        if (first == null) {
+            first = node;
+            last = node;
+        } else {
+            node.setNext(first);
+            first = node;
+        }
     }
 
 
