@@ -80,6 +80,25 @@ public class LinkedListImpl {
         }
     }
 
+    public void deleteLast() {
+        if (isEmpty()) {
+            throw new NoSuchElementException("List is empty");
+        }
+        if (first == last) {
+            first = null;
+            last = null;
+        } else {
+            var currentNode = first;
+            while (currentNode.getNext() != last) {
+                currentNode = currentNode.getNext();
+            }
+            // current node second last item
+            currentNode.setNext(null);
+            last = currentNode;
+        }
+
+    }
+
    private boolean isEmpty() {
         return first == null;
    }
