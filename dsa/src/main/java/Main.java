@@ -1,3 +1,4 @@
+import stacks.BalancedExpression;
 import stacks.StringReversal;
 
 import java.util.Stack;
@@ -5,8 +6,8 @@ import java.util.Stack;
 public class Main {
 
     public static void main(String[] args) {
-        StringReversal reverser = new StringReversal();
-        System.out.println(reverser.reverse("hello world"));
+        BalancedExpression balancedExpression = new BalancedExpression();
+        System.out.println(balancedExpression.isExpressionBalanced("(a+b"));
 
     }
 
