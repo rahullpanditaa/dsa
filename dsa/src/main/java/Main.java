@@ -1,19 +1,12 @@
-import bigONotation.QuadraticTime;
-import arrays.DynamicArray;
-import linkedLists.LinkedListImpl;
+import stacks.StringReversal;
 
-import java.util.Arrays;
-import java.util.LinkedList;
+import java.util.Stack;
 
 public class Main {
 
     public static void main(String[] args) {
-        var list = new LinkedListImpl();
-        list.addFirst(10);
-        list.addFirst(20);
-        list.addFirst(30);
-        list.reverse();
-        System.out.println(Arrays.toString(list.toArray()));
+        StringReversal reverser = new StringReversal();
+        System.out.println(reverser.reverse("hello world"));
 
     }
 
