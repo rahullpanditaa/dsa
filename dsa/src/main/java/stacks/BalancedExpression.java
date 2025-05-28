@@ -11,9 +11,10 @@ public class BalancedExpression {
 
             if (c == '(') {
                 stack.push(c);
-            } else if (c == ')') {
+            }
+            if (c == ')') {
                 if (stack.empty()) { return false; }
-                if (c == stack.pop()) { return true; }
+                stack.pop();
             }
         }
         return stack.empty();

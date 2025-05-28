@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
         BalancedExpression balancedExpression = new BalancedExpression();
-        System.out.println(balancedExpression.isExpressionBalanced("(a+b"));
+        System.out.println(balancedExpression.isExpressionBalanced("(a+b))"));
 
     }
 
